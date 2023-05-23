@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-login-app';
+
+  viewMode= '';
+  title = 'Courses';
+  post = {
+    pink: true
+  }
+  pinkChanged(){
+    console.log('pink is clicked')
+  }
 }

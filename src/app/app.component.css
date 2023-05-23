@@ -1,0 +1,29 @@
+.main-nav {
+ margin: 1px;
+}
+.nav-pills li {
+    display: inline-block;
+    padding: auto;
+  }
+  
+  .nav-pills li a {
+    display: block;
+    padding: 20px 35px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #337ab7;
+    
+  }
+  
+  .nav-pills li a:hover {
+    background-color: #23527c;
+  }
+  
+  .nav-pills li.active a {
+    background-color: #23527c;
+  }
+  .nav-pills li.active a {
+    background-color: red;
+    color: white;
+  }
+  
