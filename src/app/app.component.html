@@ -1,17 +1,20 @@
-<h1>This is my first component</h1>
+<h1></h1>
 <nav class="main-nav">
   <ul class="nav nav-pills">
     <li [class.active]="viewMode === 'home'"><a (click)="viewMode = 'home'">Home</a></li>
     <li [class.active]="viewMode === 'about'"><a (click)="viewMode = 'about'">About</a></li>
     <li [class.active]="viewMode === 'services'"><a (click)="viewMode = 'services'">Services</a></li>
     <li [class.active]="viewMode === 'contact'"><a (click)="viewMode = 'contact'">Contact</a></li>
+    <li [class.active]="viewMode === 'forms'"><a (click)="viewMode = 'forms'">forms</a></li>
   </ul>
 </nav>
 
 <div [ngSwitch]="viewMode">
-  <div *ngSwitchCase="'map'"> <app-posts></app-posts> </div>
+  <div *ngSwitchCase="'home'"> 
+    <app-posts></app-posts> </div>
   <div *ngSwitchCase="'about'"> <app-authors></app-authors> </div>
   <div *ngSwitchCase="'services'"> <courses></courses> </div>
   <div *ngSwitchCase="'contact'"> <app-course></app-course> </div>
+  <div *ngSwitchCase="'forms'"> <app-contact-form></app-contact-form> </div>
   <div *ngSwitchDefault> <app-favorite [pink]="post.pink" (change)="pinkChanged"></app-favorite> </div>
 </div>

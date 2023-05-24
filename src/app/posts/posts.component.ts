@@ -10,4 +10,6 @@ export class PostsComponent {
   constructor(http: HttpClient) {
     
   }
+  viewMode= '';
+  
 }

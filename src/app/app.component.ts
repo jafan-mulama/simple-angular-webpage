@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  viewMode= '';
+  viewMode= 'home';
   title = 'Courses';
   post = {
     pink: true

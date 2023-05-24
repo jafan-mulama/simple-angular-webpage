@@ -11,6 +11,7 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PostsComponent } from './posts/posts.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PostsComponent } from './posts/posts.component';
     CourseComponent,
     AuthorsComponent,
     FavoriteComponent,
-    PostsComponent
+    PostsComponent,
+    ContactFormComponent
 
   ],
   imports: [
