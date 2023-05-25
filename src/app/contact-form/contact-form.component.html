@@ -13,7 +13,7 @@
         </div>
         <div *ngIf="myForm.controls['nameAndComment']?.touched && myForm.controls['nameAndComment']?.invalid" class="alert alert-danger">
             <!-- Add error messages or custom error handling here -->
-            The fields cant be empty
+             The fields cant be empty
           </div>
         
         <button class="btn btn-primary" type="submit" [disabled]="!myForm.valid">Submit</button>
