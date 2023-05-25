@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent {
+nameAndComment={
+  firstName: '',
+  comment: '',
+}
+submitForm() {
+  // Handle form submission logic here
+  console.log('Form submitted!');
+  console.log('Personal Info:', this.nameAndComment );
 
+}
 }
