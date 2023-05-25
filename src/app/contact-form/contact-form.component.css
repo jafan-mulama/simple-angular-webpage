@@ -70,3 +70,50 @@ textarea {
     color: #491217;
   }
   
+  /* styles.css */
+
+/* Custom checkbox styles */
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #e7f4e7;
+    border-color: #8bc34a;
+}
