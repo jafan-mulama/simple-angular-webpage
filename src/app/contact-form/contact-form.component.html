@@ -20,6 +20,16 @@
           </div>
         <button class="btn btn-primary" type="submit" [disabled]="!myForm.valid">Submit</button>
        
+        <div class="dropdown">
+            <button class="dropdown-btn">Select an option</button>
+            <div class="dropdown-content" ngModel name="options">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+              <!-- Add more options as needed -->
+            </div>
+          </div>
+          
         <div class="checkbox">
             <input type="checkbox" id="myCheckbox" ngModel  name="isSubscribed">
             <label for="myCheckbox">subscribe to mailling list</label>
