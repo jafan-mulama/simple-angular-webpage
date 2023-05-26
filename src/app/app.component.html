@@ -5,7 +5,8 @@
     <li [class.active]="viewMode === 'about'"><a (click)="viewMode = 'about'">About</a></li>
     <li [class.active]="viewMode === 'services'"><a (click)="viewMode = 'services'">Services</a></li>
     <li [class.active]="viewMode === 'contact'"><a (click)="viewMode = 'contact'">Contact</a></li>
-    <li [class.active]="viewMode === 'forms'"><a (click)="viewMode = 'forms'">forms</a></li>
+    <li [class.active]="viewMode === 'forms'"><a (click)="viewMode = 'forms'">forms</a></li> 
+    <li [class.active]="viewMode === 'signup'"><a (click)="viewMode = 'signup'">Signup</a></li>
   </ul>
 </nav>
 
@@ -16,5 +17,6 @@
   <div *ngSwitchCase="'services'"> <courses></courses> </div>
   <div *ngSwitchCase="'contact'"> <app-course></app-course> </div>
   <div *ngSwitchCase="'forms'"> <app-contact-form></app-contact-form> </div>
+  <div *ngSwitchCase="'signup'"> <app-signup></app-signup> </div>
   <div *ngSwitchDefault> <app-favorite [pink]="post.pink" (change)="pinkChanged"></app-favorite> </div>
 </div>
