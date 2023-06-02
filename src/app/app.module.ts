@@ -13,6 +13,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { PostsComponent } from './posts/posts.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SignupComponent } from './signup/signup.component';
+import { Signup2Component } from './signup2/signup2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SignupComponent } from './signup/signup.component';
     FavoriteComponent,
     PostsComponent,
     ContactFormComponent,
-    SignupComponent
+    SignupComponent,
+    Signup2Component
 
   ],
   imports: [

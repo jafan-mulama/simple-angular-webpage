@@ -1,0 +1,43 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .container h2 {
+    text-align: center;
+    animation: scaleIn 0.5s ease-in-out;
+  }
+  @keyframes scaleIn {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+  }
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="password"],
+  .container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  .container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .container button:hover {
+    background-color: #45a049;
+  }
