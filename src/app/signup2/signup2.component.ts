@@ -8,6 +8,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class Signup2Component {
   form: FormGroup;
+  get name() { return this.form.get('name'); }
+  get email() { return this.form.get('email'); }
+  get password() { return this.form.get('password'); }
 
   constructor() {
     this.form = new FormGroup({

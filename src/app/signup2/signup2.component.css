@@ -41,3 +41,10 @@
   .container button:hover {
     background-color: #45a049;
   }
+
+  .danger {
+    border-color: red;
+    background-color: lightpink;
+    color: white;
+  }
+  

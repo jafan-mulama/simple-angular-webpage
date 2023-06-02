@@ -1,27 +1,18 @@
 <div class="container">
-    <h2>Signup Form</h2>
-    <form [formGroup]="form"  (ngSubmit)="submitForm()">
-      <input
-      formControlName="name"
-           type="text"
-           id="name" 
-           placeholder="Name" 
-           required>
-
-      <input 
-      formControlName="email"
-      type="email" 
-      id="email" 
-      placeholder="Email" 
-      required>
-
-      <input 
-      formControlName="password"
-      type="password" 
-      id="password" 
-      placeholder="Password" 
-      required>
-
-      <button type="submit">Signup</button>
-    </form>
-  </div>
+  <h2>Signup Form</h2>
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <input formControlName="name" type="text" id="name" placeholder="Name">
+    <div *ngIf="name?.touched && name?.invalid" class="danger">
+      Name is required.
+    </div>
+    <input formControlName="email" type="email" id="email" placeholder="Email" [ngClass]="{'danger': email?.invalid && email?.touched}">
+    <div *ngIf="email?.errors && email?.touched" class="error-message">
+      Please enter a valid email.
+    </div>
+    <input formControlName="password" type="password" id="password" placeholder="Password" [ngClass]="{'danger': password?.invalid && password?.touched}">
+    <div *ngIf="password?.errors && password?.touched" class="error-message">
+      Password is required and should be at least 6 characters long.
+    </div>
+    <button type="submit">Signup</button>
+  </form>
+</div>
